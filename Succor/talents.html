@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Talents form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+</head>
+<script>
+function validateForm() {
+  var x = document.forms["talents form"]["mno"].value;
+  if (x == "") {
+    alert("Mobile number must be filled out");
+    return false;
+  }
+  
+}
+</script>
+<body>
+	<style type="text/css">
+
+    body {
+      background-image:url('cool.jpeg');
+      width: 100%;
+      height: 100%;
+      background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+   background-size:cover;
+    }
+
+</style>
+   <p1 style="font-family:courier; font-size:200%; color:black;">
+<h1 align= "center"><u><b>TALENTS FORM</b></u></h1><hr/>    
+    <fieldset>
+<form name="talents form" action="talents.php" method="POST" onsubmit="return validateForm()">
+<br>
+<br>
+NAME: <input type="text" name="name" value="">  
+<br>
+<br>
+<br>    
+MOBILE NUMBER: <input type="text" name="mno" value="">      
+<br>
+<br>
+<br>    
+GENDER:<input type="radio" name="gender" value="male">MALE
+<input type="radio" name="gender" value-="female">FEMALE
+<input type="radio" name="gender" value-="others">OTHERS <br><br><br>
+TALENT AREA:<select name="talent">
+<option value="sports">SPORTS</option>
+<option value="arts">ARTS</option>     
+</select>    <br><br>
+IF INTERESTED IN SPORTS:<br><br><input type="checkbox" name="sports[]"  value="cricket">Cricket<br><br>
+    <input type="checkbox" name="sports[]" value="football">Football<br><br>
+    <input type="checkbox" name="sports[]" value="badminton">Badminton<br><br>
+    <input type="checkbox" name="sports[]" value="table tennis">Table tennis<br><br>
+    <input type="checkbox" name="sports[]" value="basketball">Basketball<br><br>
+IF INTERESTED IN ARTS:<br><br><input type="checkbox" name="arts[]"  value="dance">Dance<br><br>
+    <input type="checkbox" name="arts[]" value="music">Music<br><br>
+    <input type="checkbox" name="arts[]" value="drawing">Drawing<br><br>
+<br>
+<br>
+<br>     
+  SHORT INFORMATION ABOUT YOUR TALENT:<textarea name="descript" cols="30" rows="10" placeholder="enter talent info"></textarea><br><br>
+<input type="submit" name="SUBMIT" value="`SUBMIT">        
+<hr/>
+</form></fieldset></center>
+</p1>
+</body>
+</html>    
+    

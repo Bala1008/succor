@@ -1,0 +1,66 @@
+<html> 
+<head><script type="text/javascript">
+<!--
+		function Warning()
+		{
+			alert("Please do read the terms and conditions before filing the form")
+				}</script>
+<title>JOB SEEKERS </title> 
+</head> 
+<body style=" background:url(apple.jpg);background-size: 100% 100%;">
+<center>
+<form  action ="database.php" name="jseekers" method ="POST">
+<hr class ="line 8"><h2>JOBS SEEKERS FILL THE FORM</h2><hr class="line 8"></centre> 
+<h3>PERSONAL INFORMATION</h3>
+First name:<input type="text" name="finame" required="Please enter your name"> 
+<br> <br>
+Last name:<input type="text" name="laname" ><br> <br>
+Father's name:<input type="text" name="faname"> <br><br>
+Upload your photo<right><input type="file" name="fileupload" accept="image/*" /></right><br/><br>
+Address: <br><textarea rows="5" cols="55" name="des"> </textarea><br/><br>
+Enter DOB:  <div>
+    <label for="bday"></label>
+    <input type="date" id="bday" name="bday" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+    <span class="validity"></span>
+  </div><br><br>
+Age:<input type="text" name="age"/><br> <br>
+Gender:<input type="radio" name="sex" value="Male"/> Male<br/><br><input type="radio" name="sex" value="Female"/>Female<br/><br> 
+Enter your Adhar card Number:<input type="text" name="adhar" required pattern="[0-9]{4} [0-9]{4} [0-9]{4}"/> <span class="validity"></span></div><br> <br>
+Enter Phone number:<input type="text" name="Phno" ><br> <br>
+<br/>Choose your Qualification:<select name ="degree"><br> <br>
+<option value="bsc" name="bsc">Bachelor of Science </option>
+<option value="msc" name="msc">Master of Science</option >
+</select>
+</br><br>
+<hr class="line 9"><h4>MEDICAL DETAILS</h4><hr class="line 9">
+
+Choose the type of disability:<br>
+<input type="checkbox" value="Low Vision and Blindness" name="Disability[]"/>Low Vision and Blindness
+<input type="checkbox" value="Leprosy" name="Disability[]"/> Leprosy
+<input type="checkbox" value="Multiple Sclerosis" name="Disability[]"/>Multiple Sclerosis<br>
+<input type="checkbox" value="Hemophilia" name="Disability[]"/>Hemophilia
+<input type="checkbox" value="Parkinson's Disease" name="Disability[]"/>Parkinson's Disease
+<input type="checkbox" value="Autism Spectrum Disorder" name="Disability[]"/>Autism Spectrum Disorder<br>
+<input type="checkbox" value="Intellectual Thalassemia" name="Disability[]"/>Intellectual Thalassemia
+<input type="checkbox" value="Muscular Dystrophy" name="Disability[]"/>Muscular Dystrophy
+<input type="checkbox" value="Locomotor Disability" name="Disability[]"/>Locomotor Disability<br>
+<input type="checkbox" value="Dwarfism" name="Disability[]"/>Dwarfism
+<input type="checkbox" value="Speech and Language Disability" name="Disability[]"/>Speech and Language Disability
+<input type="checkbox" value="Cerebral Palsy" name="Disability[]"/>Cerebral Palsy<br>
+<input type="checkbox" value="Sickle Cell Disease" name="Disability[]"/>Sickle Cell Disease
+<input type="checkbox" value="Hearing Impairment" name="Disability[]"/>Hearing Impairment
+<br><br>
+
+Disability Since:   <input type="text" name="dis" /> <br>
+<br>Disability due to:<input type="checkbox" name="Dissi[]" value="Accident"/>Accident<input type="checkbox" name="Dissi[]" value="Congential"/>Congential<input type="checkbox" name="Dissi[]" value="Herdity"/>Heredity<br><br>
+
+Upload your pwd certificate:<input type="file" name="filupload" accept="pdf/*" /><br/><br>
+<h5>THE APPLICANTS MUST BE IN ANY OF THE CATEGORIES OF PWD RESERVATION POLICY</h5><input type="checkbox" 
+required name="terms"/> I accept the <u>Terms and Conditions of <b>PWD RESERVATION POLICY</b></u><br><br>
+
+<a href="http://ipindia.nic.in/Physically-Handicapped.htm" style="color:#DAF7A6">PWD RESERVATION POLICY</a><br/> 
+<h3><input type="submit" value="submit" onclick="Warning();"></h3>
+</center>
+</form> 
+</body> 
+</html> 
